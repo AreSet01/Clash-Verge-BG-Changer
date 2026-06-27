@@ -20,18 +20,21 @@
 
 ## 🚀 使用方法
 
-### 方法一：使用编译好的 macOS 应用（推荐）
-1. 从 GitHub [Releases](https://github.com/AreSet01/Clash-Verge-BG-Changer/releases) 页面下载最新的 `ClashVerge_BG_Changer_macOS.zip`。
-2. 解压并运行 `ClashVerge_BG_Changer.app`。
-3. 在软件界面中点击 **“选择图片”** 并设置满意的不透明度（推荐 `0.7` - `0.9`）。
-4. 点击 **“应用背景”**。
-5. ⚠️ **重要步骤**：在系统状态栏/托盘图标彻底右键退出 Clash Verge Rev 客户端并重新打开，使新的 CSS 生效。
+### 方法一：直接下载编译好的应用（推荐）
+从 GitHub [Releases](https://github.com/AreSet01/Clash-Verge-BG-Changer/releases) 页面下载最新的安装包：
+- **macOS 用户**：下载 `ClashVerge_BG_Changer_macOS.zip`，解压后运行 `ClashVerge_BG_Changer.app`。
+- **Windows 用户**：下载并双击运行 `ClashVerge_BG_Changer.exe`。
+
+**使用步骤**：
+1. 打开应用后，点击 **“选择图片”** 并设置满意的不透明度（推荐 `0.7` - `0.9`）。
+2. 点击 **“应用背景”**。
+3. ⚠️ **重要步骤**：在系统状态栏/托盘图标彻底右键退出 Clash Verge Rev 客户端并重新打开，使新的 CSS 生效。
 
 ### 方法二：直接运行 Python 脚本
 要求：安装有 `Python 3.x` 以及 `Pillow` 和 `PyYAML` 依赖库（脚本会在运行时自动检测并尝试安装缺失依赖）。
 
 ```bash
-python3 ClashVergeBGChanger.pyw
+python ClashVergeBGChanger.pyw
 ```
 
 ---
@@ -42,7 +45,7 @@ python3 ClashVergeBGChanger.pyw
 
 ```bash
 pip install pyinstaller pillow pyyaml
-pyinstaller --windowed --noconfirm --name=ClashVerge_BG_Changer ClashVergeBGChanger.pyw
+pyinstaller --windowed --onefile --name=ClashVerge_BG_Changer ClashVergeBGChanger.pyw
 ```
 
 ---
