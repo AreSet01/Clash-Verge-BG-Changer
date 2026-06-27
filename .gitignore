@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# PyInstaller / Build outputs
+build/
+dist/
+*.spec
+ClashVerge_BG_Changer.app
+*.zip
+
+# Temporary development folders/archives
+clash-verge-rev-main/
+main.zip
+update_css.py
