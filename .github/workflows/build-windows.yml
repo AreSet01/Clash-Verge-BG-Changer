@@ -8,6 +8,11 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+    
+    # ✅ 修复报错的关键：赋予工作流对 Release 的写入权限
+    permissions:
+      contents: write 
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,5 +36,6 @@ jobs:
         with:
           tag_name: v1.0.0
           files: dist/ClashVerge_BG_Changer.exe
+          overwrite_files: true # ✅ 建议添加：允许覆盖同名文件，防止重复触发时报错
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
